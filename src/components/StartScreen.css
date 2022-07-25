@@ -1,0 +1,26 @@
+.start h1 {
+  font-size: 3.5em;
+}
+
+.start p {
+  margin-bottom: 2em;
+  color: yellow;
+}
+
+.start button {
+  background-color: #1646a0;
+  color: white;
+  padding: 0 45px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.start button:hover {
+  background-color: #0b1c81;
+}
