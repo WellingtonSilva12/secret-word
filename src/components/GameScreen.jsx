@@ -2,7 +2,16 @@ import React from 'react'
 import './StartScreen.css'
 import { Button } from './StylesComponents'
 
-const GameScreen = ({ verifyLetter }) => {
+const GameScreen = ({
+  verifyLetter,
+  pickedWord,
+  pickedCategory,
+  letters,
+  guessedLetter,
+  wrongLetters,
+  guesses,
+  score
+}) => {
   return (
     <div className="game">
       <p className="points">
