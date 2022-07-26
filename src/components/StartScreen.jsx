@@ -1,13 +1,14 @@
 import React from 'react'
-import './StartScreen.css'
+// import './StartScreen.css'
+import { Subtitle, Title, Button, Wrapper } from './StylesComponents'
 
-const StartScreen = () => {
+const StartScreen = ({ startGame }) => {
   return (
-    <div className="start">
-      <h1>Secret Word</h1>
-      <p>Clique no botão abaixo para começar a jogar</p>
-      <button>Começar o jogo</button>
-    </div>
+    <Wrapper>
+      <Title>Secret Word</Title>
+      <Subtitle>Clique no botão abaixo para começar a jogar</Subtitle>
+      <Button onClick={startGame}>Começar o jogo</Button>
+    </Wrapper>
   )
 }
 
