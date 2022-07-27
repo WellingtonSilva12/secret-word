@@ -52,13 +52,12 @@ function App() {
 
     const { word, category } = pickWordAndCategory()
 
+    console.log(word)
+
     // create an array of letters
     let wordLetters = word.split('')
 
     wordLetters = wordLetters.map(e => e.toLowerCase())
-
-    console.log(word, category)
-    console.log(wordLetters)
 
     // Fill states
     setPickedWord(word)
@@ -127,8 +126,6 @@ function App() {
 
       startGame()
     }
-
-    console.log(uniqueLetters)
   }, [guessedLetter, letters, startGame])
 
   return (
